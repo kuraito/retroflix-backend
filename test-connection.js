@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const testConnection = async () => {
   try {
-    console.log('🔄 Tentativo di connessione a MongoDB Atlas...');
+    console.log('Tentativo di connessione a MongoDB Atlas...');
     console.log('URI:', process.env.MONGO_URI);
     
     await mongoose.connect(process.env.MONGO_URI);

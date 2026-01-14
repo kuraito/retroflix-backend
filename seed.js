@@ -4,9 +4,9 @@ const Movie = require("./src/models/Movie");
 
 async function seed() {
   try {
-    console.log("🔹 Connessione a MongoDB...");
+    console.log(" Connessione a MongoDB...");
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("✅ Connesso a MongoDB");
+    console.log(" Connesso a MongoDB");
 
     // I tuoi mockMovies
     const movies = [
@@ -66,12 +66,12 @@ async function seed() {
       }
     ];
 
-    console.log("🔹 Pulisco collection esistente...");
+    console.log(" Pulisco collection esistente...");
     await Movie.deleteMany();
 
-    console.log("🔹 Inserisco film...");
+    console.log(" Inserisco film...");
     const result = await Movie.insertMany(movies);
-    console.log(`✅ Inseriti ${result.length} film:`);
+    console.log(` Inseriti ${result.length} film:`);
 
     result.forEach(movie =>
       console.log(`- ${movie.title} (${movie.year})`)
@@ -79,7 +79,7 @@ async function seed() {
 
     process.exit();
   } catch (err) {
-    console.error("❌ Errore:", err);
+    console.error(" Errore:", err);
     process.exit(1);
   }
 }
