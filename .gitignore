@@ -1,0 +1,90 @@
+# ===========================================
+# 🚫 GITIGNORE - RETROFLIX BACKEND
+# ===========================================
+
+# 🔐 VARIABILI D'AMBIENTE (SENSIBILI)
+# File che contengono password, chiavi API, stringhe di connessione
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# 📦 NODE_MODULES
+# Dipendenze NPM - si reinstallano con npm install
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📊 LOG FILES
+# File di log generati dall'applicazione
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 🗂️ CACHE E TEMP
+# File temporanei e cache
+.cache/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# 🔧 EDITOR E IDE
+# File di configurazione degli editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 💾 DATABASE LOCALE
+# Se usi database locali come SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# 📱 SISTEMA OPERATIVO
+# File generati dal sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 🚀 BUILD E DIST
+# Cartelle di build e distribuzione
+build/
+dist/
+out/
+
+# 🧪 COVERAGE E TEST
+# Report di coverage e file di test
+coverage/
+.nyc_output/
+.coverage/
+
+# 🔑 CERTIFICATI SSL
+# Certificati e chiavi private
+*.pem
+*.key
+*.cert
+*.crt
+
+# 📈 MONITORING
+# File di monitoraggio e profiling
+*.pid
+*.seed
+*.pid.lock
+
+# 🎯 SPECIFICO RETROFLIX
+# File specifici del progetto Retroflix
+uploads/
+temp-uploads/
