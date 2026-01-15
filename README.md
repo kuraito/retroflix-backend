@@ -27,8 +27,8 @@ retroflixBck/
 │   │   └── Movie.js           # Schema film
 │   └── routes/
 │       └── movies.js          # API endpoints
-├── Dockerfile                 # Multi-stage build Docker
-├── .dockerignore              # Esclude file dal build Docker
+├── Dockerfile                 # Per build Docker
+├── .dockerignore              # Esclude file dalla build Docker
 ├── package.json               # Dipendenze
 ├── .env                       # Variabili d'ambiente (non committare)
 └── seed.js                    # Popola DB con dati di test
